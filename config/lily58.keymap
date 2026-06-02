@@ -24,6 +24,11 @@
             bindings = <&kp RA(F20)>;
             key-positions = <57 11>;
         };
+
+        clear-bluetooth-profile {
+            bindings = <&bt BT_CLR>;
+            key-positions = <36 0 11 49>;
+        };
     };
 
     keymap {
@@ -79,11 +84,11 @@
 
             display-name = "Raise";
             bindings = <
-&trans     &trans  &trans  &trans   &trans    &bt BT_CLR                    &kp C_PLAY_PAUSE  &kp C_VOLUME_UP    &kp C_NEXT      &kp C_BRIGHTNESS_INC  &kp PRINTSCREEN  &kp HOME
-&kp GRAVE  &kp N1  &kp N2  &kp N3   &kp LBRC  &kp RBRC                      &kp C_MUTE        &kp C_VOLUME_DOWN  &kp C_PREVIOUS  &kp C_BRIGHTNESS_DEC  &kp F20          &kp PAGE_UP
-&kp F1     &kp F2  &kp F3  &kp F4   &kp F5    &kp F6                        &kp DELETE        &kp LEFT           &kp DOWN        &kp UP                &kp RIGHT        &kp PAGE_DOWN
-&kp F7     &kp F8  &kp F9  &kp F10  &kp F11   &kp F12     &trans    &trans  &kp KP_PLUS       &kp MINUS          &kp EQUAL       &kp LBKT              &kp RBKT         &kp END
-                           &trans   &trans    &trans      &trans    &trans  &trans            &trans             &trans
+&trans     &trans  &trans  &trans   &trans    &trans                      &kp C_PLAY_PAUSE  &kp C_VOLUME_UP    &kp C_NEXT      &kp C_BRIGHTNESS_INC  &kp PRINTSCREEN  &kp HOME
+&kp GRAVE  &kp N1  &kp N2  &kp N3   &kp LBRC  &kp RBRC                    &kp C_MUTE        &kp C_VOLUME_DOWN  &kp C_PREVIOUS  &kp C_BRIGHTNESS_DEC  &kp F20          &kp PAGE_UP
+&kp F1     &kp F2  &kp F3  &kp F4   &kp F5    &kp F6                      &kp DELETE        &kp LEFT           &kp DOWN        &kp UP                &kp RIGHT        &kp PAGE_DOWN
+&kp F7     &kp F8  &kp F9  &kp F10  &kp F11   &kp F12   &trans    &trans  &kp KP_PLUS       &kp MINUS          &kp EQUAL       &kp LBKT              &kp RBKT         &kp END
+                           &trans   &trans    &trans    &trans    &trans  &trans            &trans             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
