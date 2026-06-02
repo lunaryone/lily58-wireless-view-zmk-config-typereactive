@@ -12,12 +12,17 @@
     combos {
         compatible = "zmk,combos";
 
-        change_language {
+        change-language {
             bindings = <&kp LG(SPACE)>;
             key-positions = <56 52>;
             slow-release;
             require-prior-idle-ms = <0>;
             timeout-ms = <80>;
+        };
+
+        discord.mute-toggle {
+            bindings = <&kp RA(F20)>;
+            key-positions = <57 11>;
         };
     };
 
